@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>baseline_attach_file_black_18dp.png</file>
+        <file>images/toolbar/baseline_add_black_18dp.png</file>
+        <file>images/toolbar/baseline_attach_file_black_18dp.png</file>
+        <file>images/toolbar/baseline_backspace_black_18dp.png</file>
+        <file>images/toolbar/baseline_create_black_18dp.png</file>
+        <file>images/toolbar/baseline_format_bold_black_18dp.png</file>
+        <file>images/toolbar/baseline_format_clear_black_18dp.png</file>
+        <file>images/toolbar/baseline_format_color_fill_black_18dp.png</file>
+        <file>images/toolbar/baseline_format_color_text_black_18dp.png</file>
+        <file>images/toolbar/baseline_format_underlined_black_18dp.png</file>
+        <file>images/toolbar/baseline_link_black_18dp.png</file>
+        <file>images/toolbar/baseline_redo_black_18dp.png</file>
+        <file>images/toolbar/baseline_send_black_18dp.png</file>
+        <file>images/toolbar/baseline_sort_black_18dp.png</file>
+        <file>images/toolbar/baseline_text_format_black_18dp.png</file>
+        <file>images/toolbar/baseline_title_black_18dp.png</file>
+        <file>images/toolbar/baseline_undo_black_18dp.png</file>
+        <file>images/toolbar/baseline_wrap_text_black_18dp.png</file>
+        <file>images/buttons/draft.png</file>
+        <file>images/buttons/inbox.png</file>
+        <file>images/buttons/mail.png</file>
+        <file>images/buttons/sent.png</file>
+        <file>images/buttons/spam.png</file>
+        <file>images/buttons/time.png</file>
+        <file>images/buttons/trash.png</file>
+        <file>images/buttons/user.png</file>
+        <file>images/user.png</file>
+        <file>images/wild.png</file>
+    </qresource>
+</RCC>

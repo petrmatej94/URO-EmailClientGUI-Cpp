@@ -5,9 +5,9 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    printf("asdsaasds");
     ui->setupUi(this);
     this->setMinimumSize(QSize(1200,740));
+    this->setBaseSize(QSize(1200,740));
 
     ui->menuWidget->setMaximumWidth(200);
     ui->menuWidget_2->setMaximumWidth(350);

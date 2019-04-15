@@ -291,12 +291,12 @@ text-align:center;
           <enum>Qt::Vertical</enum>
          </property>
          <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
+          <enum>QSizePolicy::Expanding</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>5000</height>
+           <height>300</height>
           </size>
          </property>
         </spacer>
@@ -332,7 +332,7 @@ text-align:center;
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>519</width>
+            <width>565</width>
             <height>718</height>
            </rect>
           </property>
@@ -424,32 +424,7 @@ text-align:center;
            <property name="spacing">
             <number>6</number>
            </property>
-           <item row="7" column="0" colspan="5">
-            <widget class="Line" name="line_2">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1" colspan="4">
-            <widget class="QLabel" name="lbl_header">
-             <property name="font">
-              <font>
-               <family>Arial</family>
-               <pointsize>15</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>HEADER</string>
-             </property>
-             <property name="margin">
-              <number>0</number>
-             </property>
-            </widget>
-           </item>
-           <item row="10" column="0" rowspan="3" colspan="5">
+           <item row="11" column="0" rowspan="3" colspan="5">
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <property name="spacing">
               <number>6</number>
@@ -504,6 +479,9 @@ text-align:center;
            </item>
            <item row="4" column="0" colspan="5">
             <widget class="Line" name="line">
+             <property name="styleSheet">
+              <string notr="true">margin: 10 0 10 0;</string>
+             </property>
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
@@ -516,55 +494,10 @@ text-align:center;
              </property>
             </widget>
            </item>
-           <item row="5" column="3">
-            <widget class="QLabel" name="lbl_images_3">
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>120</width>
-               <height>80</height>
-              </size>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-             <property name="pixmap">
-              <pixmap resource="img.qrc">:/images/wild.png</pixmap>
-             </property>
-             <property name="scaledContents">
-              <bool>true</bool>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
            <item row="5" column="4">
             <widget class="QLabel" name="lbl_images_4">
              <property name="text">
-              <string>                 </string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1" colspan="4">
-            <widget class="QLabel" name="lbl_from">
-             <property name="text">
-              <string>Petr.matej@vsb.cz</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="1" colspan="4">
-            <widget class="QLabel" name="lbl_message">
-             <property name="text">
-              <string>MESSAGE</string>
-             </property>
-             <property name="wordWrap">
-              <bool>true</bool>
+              <string/>
              </property>
             </widget>
            </item>
@@ -575,6 +508,41 @@ text-align:center;
              </property>
              <property name="alignment">
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>80</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="lbl_img">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap resource="img.qrc">:/images/user.png</pixmap>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="3" column="1" colspan="4">
+            <widget class="QLabel" name="lbl_message">
+             <property name="text">
+              <string>MESSAGE</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -604,6 +572,26 @@ text-align:center;
              <property name="alignment">
               <set>Qt::AlignCenter</set>
              </property>
+             <property name="margin">
+              <number>5</number>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0" colspan="5">
+            <widget class="Line" name="line_2">
+             <property name="styleSheet">
+              <string notr="true">margin: 10 0 10 0;</string>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" colspan="4">
+            <widget class="QLabel" name="lbl_from">
+             <property name="text">
+              <string>Petr.matej@vsb.cz</string>
+             </property>
             </widget>
            </item>
            <item row="5" column="2">
@@ -632,6 +620,9 @@ text-align:center;
              <property name="alignment">
               <set>Qt::AlignCenter</set>
              </property>
+             <property name="margin">
+              <number>5</number>
+             </property>
             </widget>
            </item>
            <item row="9" column="0" colspan="5">
@@ -639,7 +630,7 @@ text-align:center;
              <property name="maximumSize">
               <size>
                <width>16777215</width>
-               <height>999999</height>
+               <height>200</height>
               </size>
              </property>
              <property name="placeholderText">
@@ -647,30 +638,67 @@ text-align:center;
              </property>
             </widget>
            </item>
-           <item row="0" column="0">
-            <widget class="QWidget" name="widget_2" native="true">
+           <item row="5" column="3">
+            <widget class="QLabel" name="lbl_images_3">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
-               <width>80</width>
+               <width>120</width>
                <height>80</height>
               </size>
              </property>
-             <layout class="QVBoxLayout" name="verticalLayout_7">
-              <item>
-               <widget class="QLabel" name="lbl_img">
-                <property name="text">
-                 <string/>
-                </property>
-                <property name="pixmap">
-                 <pixmap resource="img.qrc">:/images/user.png</pixmap>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-             </layout>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="img.qrc">:/images/wild.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="margin">
+              <number>5</number>
+             </property>
             </widget>
+           </item>
+           <item row="2" column="1" colspan="4">
+            <widget class="QLabel" name="lbl_header">
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>15</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>HEADER</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="0" colspan="5">
+            <spacer name="spacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
            </item>
           </layout>
          </item>
@@ -694,6 +722,8 @@ text-align:center;
     <property name="title">
      <string>File</string>
     </property>
+    <addaction name="actionCompose_Email"/>
+    <addaction name="actionExport_Emails"/>
     <addaction name="actionSettings"/>
     <addaction name="actionExit"/>
    </widget>
@@ -703,11 +733,17 @@ text-align:center;
     </property>
     <addaction name="actionUndo"/>
     <addaction name="actionRedo"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
    </widget>
    <widget class="QMenu" name="menuTools">
     <property name="title">
      <string>Tools</string>
     </property>
+    <addaction name="actionConsole"/>
+    <addaction name="actionDrawings"/>
+    <addaction name="actionAddons"/>
+    <addaction name="actionPlugins"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -731,6 +767,46 @@ text-align:center;
   <action name="actionUndo">
    <property name="text">
     <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionExport_Emails">
+   <property name="text">
+    <string>Export Emails</string>
+   </property>
+  </action>
+  <action name="actionCompose_Email">
+   <property name="text">
+    <string>Compose Email</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionConsole">
+   <property name="text">
+    <string>Console</string>
+   </property>
+  </action>
+  <action name="actionDrawings">
+   <property name="text">
+    <string>Drawings</string>
+   </property>
+  </action>
+  <action name="actionAddons">
+   <property name="text">
+    <string>Addons</string>
+   </property>
+  </action>
+  <action name="actionPlugins">
+   <property name="text">
+    <string>Plugins</string>
    </property>
   </action>
  </widget>
